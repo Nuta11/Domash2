@@ -1,12 +1,10 @@
 ﻿
-int number = ReadInt("Введите трехзначное число: ");
-int amount = number.ToString().Length;
+Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
-if (amount < 3 || amount > 3)
+while (number >= 100)
 {
-    Console.WriteLine("Введено не трехзначное число");
+  number = number / 10  ;
 }
-else
-{
-    Console.WriteLine(InCenter(number));
-}
+
+Console.WriteLine(number % 10);
