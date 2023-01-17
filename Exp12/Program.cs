@@ -80,7 +80,7 @@ int Number = ValueInput();
 
 int[] array = CreateArray(Number);
 FillArray(array);
-int result = BitToDecimal(array);
+int result = Convert.ToInt32(BitToDecimal(array));
 string binPrin = PrintArray(array);
 
 Console.WriteLine(binPrin);
